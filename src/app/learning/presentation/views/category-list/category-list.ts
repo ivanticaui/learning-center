@@ -14,7 +14,14 @@ import {MatSort, MatSortHeader} from '@angular/material/sort';
  */
 @Component({
   selector: 'app-category-list',
-  imports: [MatTableModule, MatButtonModule, MatError, MatProgressSpinner, MatIcon, MatPaginator, MatSort, MatSortHeader],
+  imports: [MatTableModule,
+    MatButtonModule,
+    MatError,
+    MatProgressSpinner,
+    MatIcon,
+    MatPaginator,
+    MatSort,
+    MatSortHeader],
   templateUrl: './category-list.html',
   styleUrl: './category-list.css'
 })

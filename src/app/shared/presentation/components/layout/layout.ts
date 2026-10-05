@@ -8,7 +8,12 @@ import {FooterContent} from '../footer-content/footer-content';
 
 @Component({
   selector: 'app-layout',
-  imports: [RouterOutlet, RouterLink, RouterLinkActive, MatSidenavModule, MatButtonModule, MatIconModule, MatListModule, FooterContent],
+  imports: [RouterOutlet,
+    RouterLink, RouterLinkActive,
+    MatSidenavModule, MatButtonModule,
+    MatIconModule,
+    MatListModule,
+    FooterContent],
   templateUrl: './layout.html',
   styleUrl: './layout.css'
 })

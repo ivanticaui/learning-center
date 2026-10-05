@@ -97,6 +97,12 @@
       "title": "Microservices with Spring Boot",
       "description": "Build microservices architecture using Spring Boot.",
       "categoryId": 2
+    },
+    {
+      "id": 13,
+      "title": "Python",
+      "description": "Description",
+      "categoryId": 6
     }
   ]
 }

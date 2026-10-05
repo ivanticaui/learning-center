@@ -8,7 +8,9 @@ import {BaseEntity} from './base-entity';
  * @typeParam TResource - Resource type exchanged with endpoint operations.
  * @typeParam TResponse - Response envelope type returned by collection queries.
  */
-export interface BaseAssembler<TEntity extends BaseEntity, TResource extends BaseResource, TResponse extends BaseResponse> {
+export interface BaseAssembler<TEntity extends BaseEntity,
+  TResource extends BaseResource,
+  TResponse extends BaseResponse> {
   /**
    * Converts a resource to an entity.
    * @param resource - The resource to convert.

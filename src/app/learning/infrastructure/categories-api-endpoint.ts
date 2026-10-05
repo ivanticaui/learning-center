@@ -4,8 +4,6 @@ import {CategoriesResponse, CategoryResource} from './categories-response';
 import {CategoryAssembler} from './category-assembler';
 import {HttpClient} from '@angular/common/http';
 import {environment} from '../../../environments/environment';
-
-
 /**
  * Endpoint client for category CRUD operations.
  */

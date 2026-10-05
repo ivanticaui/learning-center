@@ -15,6 +15,8 @@ export class CoursesApiEndpoint extends BaseApiEndpoint<Course, CourseResource, 
    * @param http - The HttpClient to be used for making API requests.
    */
   constructor(http: HttpClient) {
-    super(http, `${environment.platformProviderApiBaseUrl}${environment.platformProviderCoursesEndpointPath}`, new CourseAssembler());
+    super(http,
+      `${environment.platformProviderApiBaseUrl}${environment.platformProviderCoursesEndpointPath}`,
+      new CourseAssembler());
   }
 }
