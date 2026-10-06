@@ -143,39 +143,55 @@ This starts the application at:
 - `http://localhost:4200/`
 
 ## Starting the Fake API
+
 The development environment is configured to consume the fake API at:
 
-- `http://localhost:3000/api/v1`
+- `http://localhost:3000`
 
-The fake API configuration files are located in the `server` folder:
-- `server/db.json`
-- `server/routes.json`
-- `server/start.sh`
+The fake API data is stored in:
 
-### Option 1: Start from the project root
+- `db.json`
+
+### Start the Fake API
+
+From the project root, run:
 
 ```bash
-npx json-server --watch server/db.json --routes server/routes.json --port 3000
+npm run server
 ```
 
-### Option 2: Use the provided script
-The provided script uses relative paths, so it should be executed from inside the `server` directory:
+The fake REST API will be available at:
 
-```bash
-cd server
-sh start.sh
+```text
+http://localhost:3000
+```
+
+For example, if `db.json` contains a `courses` collection:
+
+```text
+http://localhost:3000/courses
 ```
 
 ## Development Workflow
-For local development, start the fake API first and then start the Angular application:
+
+For local development, run the fake API and the Angular application in separate terminals:
 
 ```bash
 # Terminal 1: Fake REST API
-npx json-server --watch server/db.json --routes server/routes.json --port 3000
+npm run server
 
-# Terminal 2: Angular Dev Server
+# Terminal 2: Angular Development Server
 npm start
 ```
+
+The applications will be available at:
+
+```text
+Angular Application: http://localhost:4200
+Fake REST API:       http://localhost:3000
+```
+
+
 
 ## Available Scripts
 From the project root, the following scripts are available:
