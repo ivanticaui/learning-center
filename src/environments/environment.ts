@@ -1,6 +1,6 @@
 export const environment = {
   production: true,
-  platformProviderApiBaseUrl: 'https://fake-api-pcos.onrender.comv',
+  platformProviderApiBaseUrl: 'https://fake-api-pcos.onrender.com',
   platformProviderCategoriesEndpointPath: '/categories',
   platformProviderCoursesEndpointPath: '/courses',
   platformProviderSignInEndpointPath: '/authentication/sign-in',
